@@ -7,6 +7,7 @@ Tools used for this project include:
 2. PostgreSQL and PgAdmin4 : Creating the Database, Tables, table sttucture and running the queries.
 
 The project includes three components:
+
 **Data Modeling**
  * Designing the Database structure using an Entity Relationship Diagram.
 
