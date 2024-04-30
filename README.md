@@ -1,20 +1,22 @@
 # sql_challenge
 
-This challenge aims to conduct a series of SQL queries on employees whom the company Pewlett Hackard (a fictional company) employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files. The project includes modeling the data tables that will hold the data from the CSV files, creating the tables and inserting the data from the CSV files into a SQL database, and answer aseries of questions about the data.
-[QuickDBD](https://app.quickdatabasediagrams.com/#/) PostgreSQL and PgAdmin4 
+This challenge aims to investigate employees whom the company Pewlett Hackard (a fictional company) employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files. The project scope includes modeling the data tables that will hold the data from the CSV files, creating the tables and inserting the data into a SQL database, and answering questions about the data.
 
+Tools used for this project include:
+1. [QuickDBD](https://app.quickdatabasediagrams.com/#/): Data modeling, Data Engineering and ERD diagram.
+2. PostgreSQL and PgAdmin4 : Creating the Database, Tables, table sttucture and running the queries.
 
+The project includes three components:
 **Data Modeling**
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. To create the sketch, feel free to use a tool like QuickDBDLinks to an external site..
+ * Designing the Database structure using an Entity Relationship Diagram.
 
 **Data Engineering**
-Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
-Remember to specify the data types, primary keys, foreign keys, and other constraints.
-For the primary keys, verify that the column is unique. Otherwise, create a composite keyLinks to an external site., which takes two primary keys to uniquely identify a row.
-Be sure to create the tables in the correct order to handle the foreign keys.
-Import each CSV file into its corresponding SQL table.
+* Creating the table scheme for the data, spcifying data types, primary and foreign keys, and other constriants.
+* Creating the tables in PostgreSQL using PGAdmin4 interface.
+* Importing the CSV data into the table structure.
 
 **Data Analysis**
+Answering the following questions about the data:
 * List the employee number, last name, first name, sex, and salary of each employee.
 * List the first name, last name, and hire date for the employees who were hired in 1986.
 * List the manager of each department along with their department number, department name, employee number, last name, and first name.
