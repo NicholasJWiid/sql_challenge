@@ -1,0 +1,35 @@
+Departments
+-
+Department_no varchar(50) PK
+Department_name varchar(50)
+
+Titles
+-
+Title_id varchar(50) PK
+Title_name varchar(50)
+
+Employees
+-
+Employee_no INT PK
+Employee_title_id varchar(50) FK >- Titles.Title_id
+Birth_date date
+First_name varchar(150)
+Last_name varchar(150) 
+Sex varchar(50)
+Hire_date date
+
+Department_Employee
+-
+Employee_no INT PK FK >- Employees.Employee_no
+Department_no varchar(50) PK FK >- Departments.Department_no 
+
+Department_Manager
+-
+Department_no varchar(50) PK FK >- Departments.Department_no 
+Employee_no INT PK FK - Employees.Employee_no 
+
+
+Salaries
+-
+Employee_no INT PK FK - Employees.Employee_no
+Salary money
