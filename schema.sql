@@ -1,9 +1,7 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
+﻿-- Drop tables if they exist
 DROP TABLE IF EXISTS "Departments", "Titles", "Employees", "Department_Employee", "Department_manager", "Salaries";
 
-
+-- Create Table Schemas
 CREATE TABLE "Departments" (
     "Department_no" varchar(50)   NOT NULL,
     "Department_name" varchar(50)   NOT NULL,
@@ -57,6 +55,7 @@ CREATE TABLE "Salaries" (
      )
 );
 
+-- Add Constraints
 ALTER TABLE "Employees" ADD CONSTRAINT "fk_Employees_Employee_title_id" FOREIGN KEY("Employee_title_id")
 REFERENCES "Titles" ("Title_id");
 
@@ -75,3 +74,5 @@ REFERENCES "Employees" ("Employee_no");
 ALTER TABLE "Salaries" ADD CONSTRAINT "fk_Salaries_Employee_no" FOREIGN KEY("Employee_no")
 REFERENCES "Employees" ("Employee_no");
 
+
+-- References: Exported from QuickDBD: https://www.quickdatabasediagrams.com/
